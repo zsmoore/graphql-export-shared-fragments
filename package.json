@@ -1,0 +1,35 @@
+{
+  "name": "graphql-export-shared-fragments",
+  "version": "0.0.1",
+  "description": "Add export directives to all fragments referenced outside of files in Graphql",
+  "main": "dist/index.js",
+  "scripts": {
+    "run": "tsc && node dist/index.js /Users/zsmoore/dev/graphql-export-shared-fragments/graphql",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint ./lib/**",
+    "fix-lint": "npx eslint ./lib/** --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsmoore/graphql-export-shared-fragments.git"
+  },
+  "author": "Zachary Moore",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/zsmoore/graphql-export-shared-fragments/issues"
+  },
+  "homepage": "https://github.com/zsmoore/graphql-export-shared-fragments#readme",
+  "dependencies": {
+    "graphql": "^16.6.0",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.1",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}

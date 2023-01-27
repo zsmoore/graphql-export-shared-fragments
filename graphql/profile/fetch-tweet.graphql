@@ -1,0 +1,10 @@
+query fetchUser($tweetId: ID!) {
+    Tweet(id: $tweetId) {
+        ...basicTweet
+        Stat {
+            user {
+                ...standardUser
+            }
+        }
+    }
+}

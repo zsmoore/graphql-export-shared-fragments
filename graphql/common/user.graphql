@@ -1,0 +1,18 @@
+fragment basicTweet on Tweet @export {
+  id
+  body
+  date
+  Author {
+    ...standardUser
+  }
+}
+
+fragment standardUser on User @export {
+  id
+  username
+  first_name
+  last_name
+  full_name
+  name
+  avatar_url
+}
